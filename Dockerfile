@@ -18,7 +18,7 @@ RUN sed -i -E 's/peer$/trust/' /etc/postgresql/10/main/pg_hba.conf
 #Install elixir
 RUN apt install -y gnupg
 RUN apt install -y wget
-RUN wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+RUN wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && dpkg -i erlang-solutions_2.0_all.deb
 RUN apt-get update
 RUN apt-get -y install esl-erlang
 RUN apt-get -y install elixir
