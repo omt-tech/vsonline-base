@@ -8,7 +8,7 @@ ENV LC_ALL en_US.UTF-8
 
 RUN apt-get update
 
-RUN apt-get install build-essentials
+RUN apt-get install build-essential
 
 #Install postgres
 RUN DEBIAN_FRONTEND=noninteractive apt install -y postgresql postgresql-contrib
