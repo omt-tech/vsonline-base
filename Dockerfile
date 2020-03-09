@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
   && rm -rf /var/lib/apt/lists/*
 
 ENV NVM_DIR /usr/local/nvm # or ~/.nvm , depending
-ENV NODE_VERSION 0.10.33
+ENV NODE_VERSION 12.15.0
 
 # Install nvm with node and npm
 RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash \
