@@ -39,8 +39,8 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends \
   libssl-dev \
   wget \
   && rm -rf /var/lib/apt/lists/*
-
-ENV NVM_DIR /usr/local/nvm # or ~/.nvm , depending
+# or ~/.nvm , depending
+ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 12.15.0
 
 # Install nvm with node and npm
