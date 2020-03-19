@@ -10,6 +10,8 @@ RUN apt-get update
 
 RUN apt-get install -y build-essential
 
+RUN apt-get install -y vim
+
 #Install postgres
 RUN DEBIAN_FRONTEND=noninteractive apt install -y postgresql postgresql-contrib
 RUN sed -i -E 's/md5$/trust/' /etc/postgresql/10/main/pg_hba.conf
